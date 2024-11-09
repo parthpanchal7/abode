@@ -9,7 +9,7 @@ include('header.php');
     <div class="container">
         <div class="banner-content">
             <div class="banner-content-wrap">
-                <h1>Web Development Companysss</h1>
+                <h1>Web Development Company</h1>
                 <p>Grow your business exponentially and enrich your customer relationship by implementing our comprehensive web solutions at a nominal cost</p>
                 <a href="#" class="btn">Talk to the team <span class="btn-arrow"><i class="fas fa-arrow-right"></i></span></a>
             </div>
