@@ -2,6 +2,8 @@
 
 :root {
 --primary-font: "Montserrat", sans-serif;
+--primary-color: #203364;
+--light-primary-color: #d6e2ff;
 }
 
 * {
@@ -75,15 +77,15 @@ section {
 }
 
 .main-header {
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    padding: 0 20px;
+    box-shadow: 0 1px 20px rgba(0, 0, 0, 0.05);
     background-color: #fff;
     position: relative;
     z-index: 99999;
 }
 
 .logo-col a {
-    max-width: 80px;
+    max-width: 180px;
     width: 100%;
     display: inline-block;
 }
@@ -91,6 +93,9 @@ section {
 .main-menu-wrap .main-menu {
     margin: 0;
     padding: 0;
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
 }
 
 .main-menu-wrap .main-menu li {
@@ -100,7 +105,7 @@ section {
 .main-menu-wrap .main-menu li a {
     text-decoration: none;
     color: #1A1818;
-    padding: 16px;
+    padding: 36px 16px;
     display: inline-block;
     font-weight: 600;
     transition: all .3s;
@@ -126,12 +131,13 @@ section {
     position: absolute;
     background: #fff;
     width: 250px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.08);
-    top: 40px;
+    padding: 18px 0;
+    box-shadow: 0 -3px 23px rgba(0, 0, 0, 0.06) !important;
+    top: 80px;
+    border-radius: 4px;
     opacity: 0;
-    transform: translateY(50px);
     visibility: hidden;
+    transform: translateY(.5em);
     transition: all .3s;
 }
 
@@ -155,6 +161,88 @@ section {
 
 .menu-toggle {
     display: none;
+}
+
+.main-menu-wrap .main-menu li.has-submenu.mega-menu-wrapper {
+    position: unset;
+}
+
+.main-menu-wrap .main-menu li.has-submenu .submenu.mega-menu {
+    width: 100%;
+    left: 0;
+    top: 80px;
+    padding: 0;
+}
+
+.main-header .container {
+    position: relative;
+}
+
+.single-menu-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mega-menu-wrap .left-part {
+    width: 35%;
+}
+
+.left-menu-wrap .single-menu {
+    padding: 20px;
+}
+
+.left-menu-wrap .single-menu a {
+    padding: 0 !important;
+}
+
+.left-menu-wrap .single-menu .single-menu-item .single-menu-icon {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    background: #203364;
+    padding: 10px;
+}
+
+.left-menu-wrap .single-menu .single-menu-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.right-part {
+    width: 65%;
+    background-color: var(--light-primary-color);
+    padding: 20px;
+}
+
+.single-menu-title {
+    padding: 16px;
+}
+
+.mega-menu-wrap .right-part .single-menu {
+    display: none; /* Hide all right-part menu items by default */
+}
+
+.mega-menu-wrap .single-menu-wrap:hover .right-part .single-menu {
+    display: none; /* Reset display for all right items on hover */
+}
+
+/* Show only the right-part item that matches the hovered left-part */
+.mega-menu-wrap .single-menu-wrap:hover .right-part .single-menu[data-menu-title="data-consulting"] {
+    display: block;
+}
+
+.mega-menu-wrap .single-menu-wrap[data-menu-title="business-consulting"]:hover .right-part .single-menu[data-menu-title="business-consulting"],
+.mega-menu-wrap .single-menu-wrap[data-menu-title="it-consulting"]:hover .right-part .single-menu[data-menu-title="it-consulting"],
+.mega-menu-wrap .single-menu-wrap[data-menu-title="digital-services"]:hover .right-part .single-menu[data-menu-title="digital-services"] {
+    display: block;
+}
+
+.left-menu-wrap .single-menu:hover {
+    background-color: var(--light-primary-color)
 }
 
 .banner {
@@ -1455,13 +1543,13 @@ footer {
 @keyframes submenuAnim {
     0% {
         opacity: 0;
-        transform: translateY(50px);
         visibility: hidden;
+        transform: translateY(.5em);
     }
     100% {
         opacity: 1;
-        transform: translateY(0px);
         visibility: visible;
+        transform: translateY(0);
     }
 }
 

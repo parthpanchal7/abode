@@ -95,4 +95,15 @@ $(document).ready(function(){
         dots: false,
         arrows: false,
       });
+
+
+      $(`.right-part .single-menu[data-menu-title="data-consulting"]`).show();
+      $('.left-part .single-menu').on('mouseenter', function() {
+        
+        const title = $(this).data('menu-title');
+        $('.right-part .single-menu').hide();
+        $(`.right-part .single-menu[data-menu-title="${title}"]`).show();
+    });
+
+
 });
