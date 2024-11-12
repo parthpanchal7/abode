@@ -1,7 +1,7 @@
 <?php
 include('top-header.php');
 ?>
-<title>Abode Enterprice</title>
+<title>Abode Enterprise</title>
 <?php
 include('header.php');
 ?>
@@ -19,40 +19,9 @@ include('header.php');
         <div class="mouse-icon"><span></span></div>
     </a>
 </div>
-<section id="clients" class="clients-logos-sec">
-    <div class="clients-logos">
-        <div class="single-logo">
-            <img src="assets/images/tata.webp" alt="tata">
-        </div>
-        <div class="single-logo">
-            <img src="assets/images/disney.webp" alt="disney">
-        </div>
-        <div class="single-logo">
-            <img src="assets/images/kantar-media.webp" alt="kantar">
-        </div>
-        <div class="single-logo">
-            <img src="assets/images/ceat.webp" alt="ceat">
-        </div>
-        <div class="single-logo">
-            <img src="assets/images/google.webp" alt="google">
-        </div>
-        <div class="single-logo">
-            <img src="assets/images/hitachi.webp" alt="hitachi">
-        </div>
-        <div class="single-logo">
-            <img src="assets/images/astral.webp" alt="astral">
-        </div>
-        <div class="single-logo">
-            <img src="assets/images/viacom-media.webp" alt="viacom">
-        </div>
-        <div class="single-logo">
-            <img src="assets/images/npci.webp" alt="npci">
-        </div>
-        <div class="single-logo">
-            <img src="assets/images/emaar.webp" alt="emaar">
-        </div>
-    </div>
-</section>
+<?php
+include('template-parts/clients-slider.php');
+?>
 <section class="about-company">
     <div class="container">
         <div class="about-company-wrap align-items-center">
@@ -60,7 +29,7 @@ include('header.php');
                 <div class="digits-wrap">
                     <div class="single-digit">
                         <div class="single-digit-icon">
-                            <img src="assets/images/client.png" alt="client">
+                            <img src="assets/images/client.webp" alt="client">
                         </div>
                         <div class="single-digit-count">
                             <strong>11+</strong>
@@ -69,7 +38,7 @@ include('header.php');
                     </div>
                     <div class="single-digit">
                         <div class="single-digit-icon">
-                            <img src="assets/images/mobile-development.png" alt="mobile development">
+                            <img src="assets/images/mobile-development.webp" alt="mobile development">
                         </div>
                         <div class="single-digit-count">
                             <strong>4500+</strong>
@@ -78,7 +47,7 @@ include('header.php');
                     </div>
                     <div class="single-digit">
                         <div class="single-digit-icon">
-                            <img src="assets/images/coding.png" alt="webiste">
+                            <img src="assets/images/coding.webp" alt="webiste">
                         </div>
                         <div class="single-digit-count">
                             <strong>2200+</strong>
@@ -87,7 +56,7 @@ include('header.php');
                     </div>
                     <div class="single-digit">
                         <div class="single-digit-icon">
-                            <img src="assets/images/rating.png" alt="ratings">
+                            <img src="assets/images/rating.webp" alt="ratings">
                         </div>
                         <div class="single-digit-count">
                             <strong>4.9</strong>
@@ -96,7 +65,7 @@ include('header.php');
                     </div>
                     <div class="single-digit">
                         <div class="single-digit-icon">
-                            <img src="assets/images/internet.png" alt="security">
+                            <img src="assets/images/internet.webp" alt="security">
                         </div>
                         <div class="single-digit-count">
                             <strong>150+</strong>
@@ -105,7 +74,7 @@ include('header.php');
                     </div>
                     <div class="single-digit">
                         <div class="single-digit-icon">
-                            <img src="assets/images/dedication.png" alt="developers">
+                            <img src="assets/images/dedication.webp" alt="developers">
                         </div>
                         <div class="single-digit-count">
                             <strong>1100+</strong>
@@ -126,6 +95,7 @@ include('header.php');
 </section>
 <section class="services-sec">
     <div class="container">
+        <h2 class="section-title text-center">Services We Offer</h2>
         <div class="services-tab-section">
             <ul class="services-tab-header">
                 <li><a href="#data-consulting">Data Consulting</a></li>
@@ -367,7 +337,7 @@ include('header.php');
 
 <section class="industries-slide-sec">
     <div class="container">
-        <h2 class="section-title">Industries We Serve</h2>
+        <h2 class="section-title text-center">Industries We Serve</h2>
 
 
         <div class="industries-slider">
@@ -505,15 +475,14 @@ include('header.php');
     </div>
 </section>
 <section class="our-process-sec">
+    <h2 class="section-title text-center">Do These Challenges Sound Familiar?</h2>
     <div class="process-wrap">
         <div class="process-img-col">
-            <h2 class="challanges-heading">Do these challenges sound familiar?</h2>
             <figure>
                 <img src="assets/images/process.jpg" alt="process">
             </figure>
         </div>
         <div class="process-content-col">
-            <h2 class="section-title">Do these challenges sound familiar?</h2>
             <div class="process-content-wrap">
 
                 <div class="challanges-wrap">

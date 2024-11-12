@@ -70,6 +70,10 @@ section {
     margin-bottom: 0 !important;
 }
 
+/* .dark-header .main-header {
+    background-color: var(--primary-color);
+} */
+
 .main-header-wrap {
     display: flex;
     align-items: center;
@@ -109,6 +113,8 @@ section {
     display: inline-block;
     font-weight: 600;
     transition: all .3s;
+    background: transparent;
+    border: none;
 }
 
 .main-menu-wrap .main-menu li.has-submenu {
@@ -365,6 +371,10 @@ section {
     animation: 1.2s ease infinite wheel-up-down;
 }
 
+.clients-logos-sec {
+    scroll-margin-top: 4.5em;
+}
+
 .clients-logos .single-logo img {
     margin-left: auto;
     margin-right: auto;
@@ -485,6 +495,10 @@ ul.services-tab-header li a:before {
 
 ul.services-tab-header li a.active:before {
     opacity: 1;
+}
+
+.services-tab-section {
+    margin-top: 60px;
 }
 
 .tab-services-wrap {
@@ -658,7 +672,7 @@ ul.services-tab-header li a.active:before {
 .single-business-modal-wrap:after {
     content: '';
     position: absolute;
-    background-color: #4842A8;
+    background-color: var(--primary-color);
     width: 77px;
     height: 77px;
     bottom: 0px;
@@ -769,6 +783,7 @@ ul.services-tab-header li a.active:before {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
+    margin-top: 60px;
 }
 
 .process-img-col {
@@ -873,7 +888,7 @@ ul.services-tab-header li a.active:before {
     height: 105%;
     position: absolute;
     border-top-left-radius: 35px;
-    background: #4842A8;
+    background: var(--primary-color);
     z-index: -1;
 }
 
@@ -904,7 +919,7 @@ ul.services-tab-header li a.active:before {
     justify-content: center;
     width: 130px;
     height: 130px;
-    border: 5px solid #4842A8;
+    border: 5px solid var(--primary-color);
     border-radius: 50%;
     position: relative;
 }
@@ -954,7 +969,7 @@ ul.services-tab-header li a.active:before {
 
 .single-why-choose .single-choose-content .single-choose-img i {
     font-size: 60px;
-    color: #4842A8;
+    color: var(--primary-color);
 }
 
 .single-choose-blurb-content {
@@ -1068,7 +1083,7 @@ ul.services-tab-header li a.active:before {
     align-items: center;
     justify-content: center;
     color: #fff;
-    background: #4842A8;
+    background: var(--primary-color);
     border-radius: 50%;
     margin: 0 auto 20px;
 }
@@ -1099,7 +1114,7 @@ ul.services-tab-header li a.active:before {
 }
 
 .home-page-testimonial-list .slick-dots li.slick-active button:before {
-    color: #4842A8;
+    color: var(--primary-color);
 }
 
 .home-page-testimonial-list .slick-dots {
@@ -1111,7 +1126,7 @@ ul.services-tab-header li a.active:before {
 }
 
 .social-connect a {
-    color: #4842A8;
+    color: var(--primary-color);
     font-size: 30px;
 }
 
@@ -1164,7 +1179,7 @@ ul.services-tab-header li a.active:before {
 }
 
 .single-blog-slide-inner .single-blog-details .single-blog-meta .blog-cat {
-    color: #4842A8;
+    color: var(--primary-color);
     text-transform: uppercase;
     font-weight: 500;
     font-size: 14px;
@@ -1224,7 +1239,7 @@ ul.services-tab-header li a.active:before {
 
 footer {
     padding: 90px 0 0;
-    background-color: #192020;
+    background-color: var(--primary-color);
 }
 
 .top-footer-wrap {
@@ -1240,7 +1255,7 @@ footer {
 
 .footer-form {
     padding: 35px;
-    background: #252b2b;
+    background: #021a39;
     border: 1px solid #3b4040;
     border-radius: 24px;
 }
@@ -1377,7 +1392,7 @@ footer {
 }
 
 .footer-reviews {
-    background: #252b2b;
+    background: #021a39;
     border: 1px solid #3b4040;
     border-radius: 24px;
     margin-top: 30px;
@@ -1524,6 +1539,128 @@ footer {
     padding-right: 1.875rem;
 }
 
+.services-banner {
+    background-color: var(--primary-color);
+    min-height: 700px;
+    margin-bottom: 120px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+.banner-contnent {
+    max-width: 982px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner-contnent .sub-heading {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.banner-contnent h1 {
+    color: #fff;
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 1;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 45px 0;
+}
+
+p.banner-desc {
+    margin-right: 150px;
+    margin-bottom: 30px;
+    margin-left: 150px;
+    color: rgba(255,255,255,0.85);
+    font-size: 24px;
+    line-height: 1.7;
+}
+
+.service-banner-digits .banner-digits-wrap {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 44px;
+}
+
+.service-banner-digits .banner-digits-wrap .single-banner-digit {
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    box-shadow: 0 -3px 23px rgba(0, 0, 0, 0.2);
+}
+
+.service-banner-digits .banner-digits-wrap .single-banner-digit h3 {
+    font-size: 42px;
+    color: var(--primary-color);
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.service-banner-digits .banner-digits-wrap .single-banner-digit  p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.service-banner-digits {
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: -140px;
+}
+
+.services-inro {
+    background-color: #e6edff;
+}
+
+.services-intro-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.services-into-left-col {
+    width: calc(50% - 30px);
+}
+
+.services-intro-img-col {
+    width: calc(50% - 30px);
+}
+
+.services-intro-wrap .page-line {
+    font-size: 20px;
+    line-height: 34px;
+    margin-bottom: 20px;
+}
+
+.services-intro-wrap p {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.services-intro-img-col img {
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0px 64px 200px 0px rgba(0, 0, 0, 0.3);
+}
+
 @keyframes wheel-up-down {
     0% {
         margin-top: 2px;
@@ -1563,10 +1700,6 @@ footer {
 }
 
 @media (max-width: 767px) {
-
-    .logo-col a {
-        max-width: 60px;
-    }
     
     .main-header {
         padding: 10px 20px;
