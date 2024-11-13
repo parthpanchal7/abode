@@ -63,5 +63,79 @@ include('template-parts/clients-slider.php');
         </div>
     </div>
 </section>
+<section class="services-offers">
+    <div class="container">
+        <h2 class="section-title light text-center">Services We Offer</h2>
+
+        <div class="services-offer-wrap">
+            <div class="single-service-offer">
+                <div class="single-service-icon">
+                    <img src="assets/images/ui-ux.svg" alt="ui/ux">
+                </div>
+                <div class="single-service-meta">
+                    <h3>UI/UX</h3>
+
+                    <p>With a UI/UX check-up, we pinpoint areas where your platform can be smoother, faster, and more intuitive.</p>
+                </div>
+            </div>
+            <div class="single-service-offer">
+                <div class="single-service-icon">
+                    <img src="assets/images/product-redesign.svg" alt="poduct redesign">
+                </div>
+                <div class="single-service-meta">
+                    <h3>Product Redesign</h3>
+
+                    <p>We revamp your product to enhance its functionality and visual appeal, meeting the demands of the audience.</p>
+                </div>
+            </div>
+            <div class="single-service-offer">
+                <div class="single-service-icon">
+                    <img src="assets/images/mvp-design.svg" alt="mvp">
+                </div>
+                <div class="single-service-meta">
+                    <h3>MVP Design</h3>
+
+                    <p>We craft MVPs to test your idea and deliver core features with exceptional user experience from the outset.</p>
+                </div>
+            </div>
+            <div class="single-service-offer">
+                <div class="single-service-icon">
+                    <img src="assets/images/design-system.svg" alt="ui/ux">
+                </div>
+                <div class="single-service-meta">
+                    <h3>Design System Creation</h3>
+
+                    <p>Our team will create a comprehensive set of design guidelines and components, all to make your brand consistent.</p>
+                </div>
+            </div>
+            <div class="single-service-offer">
+                <div class="single-service-icon">
+                    <img src="assets/images/user-research.svg" alt="user research">
+                </div>
+                <div class="single-service-meta">
+                    <h3>User Research</h3>
+
+                    <p>We provide comprehensive research and usability testing services to ensure your product meets user needs.</p>
+                </div>
+            </div>
+            <div class="single-service-offer">
+                <div class="single-service-icon">
+                    <img src="assets/images/ui-ux.svg" alt="ui/ux">
+                </div>
+                <div class="single-service-meta">
+                    <h3>UI for Web & Mobile</h3>
+
+                    <p>Our UI design solutions bring aesthetics and functionality, making your product shine on every screen.</p>
+                </div>
+            </div>
+            <div class="service-divider vertical"></div>
+            <div class="service-divider vertical two"></div>
+            <div class="service-divider horizontal"></div>
+        </div>
+    </div>
+</section>
+<section class="services-cta">
+
+</section>
 <?php
 include('footer.php');

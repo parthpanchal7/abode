@@ -10,13 +10,13 @@
         <div class="container">
             <div class="main-header-wrap">
                 <div class="logo-col">
-                    <a href="/">
+                    <!-- <a href="/">
                         <?php if(isset($headerClass)): ?>
                         <img src="assets/images/abode-logo.png" alt="logo">
                         <?php else: ?>
                         <img src="assets/images/abode-logo.png" alt="logo">
                         <?php endif; ?>
-                    </a>
+                    </a> -->
                 </div>
                 <div class="menu-toggle">
                     <div class="inner">

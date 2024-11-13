@@ -586,6 +586,10 @@ ul.services-tab-header li a.active:before {
     margin-bottom: 20px;
 }
 
+.section-title.light {
+    color: #fff;
+}
+
 .sub-heading {
     font-size: 18px;
     line-height: 30px;
@@ -1659,6 +1663,82 @@ p.banner-desc {
 .services-intro-img-col img {
     border-radius: 15px 15px 15px 15px;
     box-shadow: 0px 64px 200px 0px rgba(0, 0, 0, 0.3);
+}
+
+.services-offers {
+    background-color: var(--primary-color);
+}
+
+.services-offer-wrap {
+    margin-top: 60px;
+    grid-column-gap: 7.5rem;
+    grid-row-gap: 7.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+    position: relative;
+    grid-auto-columns: 1fr;
+    display: grid;
+}
+
+.single-service-offer {
+    text-align: left;
+    z-index: 900;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    opacity: 1;
+    width: 100%;
+    transition: transform .6s, opacity .4s;
+    display: block;
+    transform: translate(0);
+}
+
+.single-service-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 40px;
+}
+
+.single-service-meta h3 {
+    letter-spacing: -.01em;
+    text-transform: none;
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #fff;
+    margin-bottom: 24px;
+}
+
+.single-service-meta p {
+    max-width: 21rem;
+    color: rgba(255,255,255,0.7);
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.service-divider {
+    background: rgba(255,255,255,0.7);
+    width: 1px;
+    height: 100%;
+    transition: all .6s;
+    position: absolute;
+    left: 31%;
+}
+
+.service-divider.vertical {
+    grid-area: span 1/span 1/span 1/span 1;
+}
+
+.service-divider.vertical.two {
+    left: 67%;
+    grid-area: span 1/span 1/span 1/span 1;
+}
+
+.service-divider.horizontal {
+    width: 100%;
+    height: 1px;
+    top: 50%;
+    left: 0%;
+    grid-area: span 1/span 1/span 1/span 1;
 }
 
 @keyframes wheel-up-down {
