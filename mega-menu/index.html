@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega Menu</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">Logo</div>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-button">Services <span class="arrow">▼</span></button>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="level2-menu">
+                                    <ul>
+                                        <li class="level2-item">Data Consulting</li>
+                                        <li class="level2-item">Business Consulting</li>
+                                        <li class="level2-item">IT Consulting</li>
+                                        <li class="level2-item">Digital Services</li>
+                                    </ul>
+                                </div>
+                                <div class="level3-menu">
+                                    <div class="submenu active" data-category="software">
+                                        <div class="submenu-item">
+                                            <h4>Data Consulting</h4>
+                                            <ul>
+                                                <li><a href="#">Data Collection Services</a></li>
+                                                <li><a href="#">Web Research Services</a></li>
+                                                <li><a href="#">Web Scraping Services</a></li>
+                                                <li><a href="#">Mobile App Scraping Services</a></li>
+                                                <li><a href="#">Data Mining Services</a></li>
+                                                <li><a href="#">Data Management Services</a></li>
+                                                <li><a href="#">Data Enrichment Services</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="submenu-item">
+                                            <h4>Business Consulting</h4>
+                                            <ul>
+                                                <li><a href="#">Market Intelligence Services</a></li>
+                                                <li><a href="#">Business Intelligence Consulting Services</a></li>
+                                                <li><a href="#">Business Process Management Services</a></li>
+                                                <li><a href="#">Competitor Intelligence Service</a></li>
+                                                <li><a href="#">Sentiment Analysis Service</a></li>
+                                                <li><a href="#">Business Process Automation Services</a></li>
+                                                <li><a href="#">Business Process Consulting</a></li>
+                                                <li><a href="#">Ecommerce Management Services</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="submenu-item">
+                                            <h4>IT Consulting</h4>
+                                            <ul>
+                                                <li><a href="#">Help Desk Outsourcing</a></li>
+                                                <li><a href="#">Outsource Web Development Services</a></li>
+                                                <li><a href="#">Software Development Consulting Services</a></li>
+                                                <li><a href="#">Custom Application Development Service</a></li>
+                                                <li><a href="#">IT Software Support Service</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="submenu-item">
+                                            <h4>Digital Services</h4>
+                                            <ul>
+                                                <li><a href="#">Outsource Digital Marketing Services</a></li>
+                                                <li><a href="#">Outsource SEO Services</a></li>
+                                                <li><a href="#">Social Media Marketing Consulting Services</a></li>
+                                                <li><a href="#">Graphic Design And Branding Services</a></li>
+                                                <li><a href="#">Outsource Photo Editing Services</a></li>
+                                                <li><a href="#">UI UX Design</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- Add more nav items here with the same structure -->
+                </ul>
+            </nav>
+
+            <button class="mobile-menu-button">☰</button>
+        </div>
+    </header>
+
+    <main class="main">
+        <h1>Welcome to Our Platform</h1>
+        <p>Hover over the menu items above to explore our mega menu.</p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
