@@ -105,5 +105,15 @@ $(document).ready(function(){
         $(`.right-part .single-menu[data-menu-title="${title}"]`).show();
     });
 
+    $('.faq-question').on('click', function () {
+      // Toggle the answer
+      $(this).next('.faq-answer').slideToggle(200);
 
+      // Close other answers
+      $('.faq-answer').not($(this).next()).slideUp(200);
+
+      // Optionally toggle active class for styling
+      $('.faq-question').not($(this)).removeClass('active');
+      $(this).toggleClass('active');
+  });
 });

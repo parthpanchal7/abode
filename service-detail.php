@@ -419,5 +419,34 @@ include('template-parts/clients-slider.php');
         </div>
     </div>
 </section>
+<section class="faq-section">
+    <div class="container">
+        <h2 class="section-title text-center">Frequently Asked Questions</h2>
+        <p class="section-desc text-center">Here's a list of FAQs that will help you to know more about our healthcare software development services.</p>
+
+        <div class="faqs-wrapper">
+        <div class="faq">
+            <div class="faq-item">
+                <div class="faq-question">What is your return policy?</div>
+                <div class="faq-answer">
+                    <p>We offer a 30-day return policy, no questions asked. Just ensure the product is in its original condition.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Do you offer international shipping?</div>
+                <div class="faq-answer">
+                    <p>Yes, we ship to over 50 countries worldwide. Shipping charges and times vary by location.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">How can I contact customer support?</div>
+                <div class="faq-answer">
+                    <p>You can contact our support team via email at support@example.com or call us at 123-456-7890.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
 <?php
 include('footer.php');
